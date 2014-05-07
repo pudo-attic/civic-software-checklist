@@ -118,7 +118,6 @@ away!
 
 ### References
 
-* [Producing Open Source Software](http://producingoss.com/en/index.html),
-  how to run a successful free software project.
-* Noah Veltman's [principles on design](https://github.com/veltman/principles).
+* [Producing Open Source Software](http://producingoss.com/en/index.html)
+* Noah Veltman's [principles on design](https://github.com/veltman/principles)
 
