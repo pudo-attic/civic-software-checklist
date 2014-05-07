@@ -30,7 +30,7 @@ away!
 
 * **An open source license**. Explicitly defining the terms of re-use is the key to
   opening your software. Never write your own licenses, but instead use
-  either the GPL or an MIT/BSD license ([here's a comparison](http://producingoss.com/en/license-choosing.html)), and place the chosen text in a 
+  either the GPL or an MIT/BSD license ([here's a comparison](http://choosealicense.com)), and place the chosen text in a 
   file called ``LICENSE``.
  
 * **Set up a public code repository**. Code sharing platforms like
