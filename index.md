@@ -1,3 +1,7 @@
+---
+layout: index
+---
+
 Civic Software Checklist
 ========================
 
