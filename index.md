@@ -52,7 +52,7 @@ away!
   to install, and many of the intricacies of setting up your project may
   fall out of the scope of the ``README`` file. Make sure you provide 
   detailed instructions on what other software is required to run your
-  project.
+  project and steps to take in a separate ``INSTALL.md`` file.
   
   To further simplify the installation of your project, you might want
   to provide support for [docker.io](http://docs.docker.io/reference/builder/)
