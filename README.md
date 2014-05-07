@@ -15,12 +15,14 @@ challenges they face:
 Both issues can be addressed by following the (mostly non-technical)
 strategies laid out here.
 
+***
+
 **Note:** This is a collaborative document. Please feel free to submit
 pull requests to suggest changes. The goal of this document is to be as
 concise and understandable as possible. If you see any fluff, help cut it
 away!
 
-### Checklist for your project
+## Checklist for your project
 
 * **An open source license**. Explicitly defining the terms of re-use is the key to
   opening your software. Never write your own licenses, but instead use
@@ -83,7 +85,7 @@ away!
   modify live data.
   
 
-### Practices for releasing open source sofware
+## Practices for releasing open source sofware
 
 * Avoid **not invented here** syndrome. Another group may have already
   solved the problem you're dealing with, so spend some time on
