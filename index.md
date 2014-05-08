@@ -88,6 +88,10 @@ away!
   can be useful for developers to have a testing instance that does not
   modify live data.
   
+* **Testing saves lives.** Using automated testing helps you to check 
+  that nothing has broken when you before you release code. It also helps 
+  your contributors feel confidant they have not broken code they are
+  less familiar with.
 
 ## Practices for releasing open source sofware
 
