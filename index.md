@@ -34,7 +34,7 @@ away!
   file called ``LICENSE``.
  
 * **Set up a public code repository**. Code sharing platforms like
-  GitHub enable developers to work togeter easily. They improve your
+  GitHub enable developers to work together easily. They improve your
   internal development workflow as well.
  
 * **A ``README`` file.** This introduces a user to your code base and should
