@@ -70,7 +70,7 @@ away!
   contribute, you can point them at these **low-hanging fruit**.
   
 * **Supply testing data and database migrations.** To get people started
-  with your application, it's very useful to provide some realisitc test
+  with your application, it's very useful to provide some realistic test
   data, perhaps even a part of the data used in the live service.
   
   Database migrations are small programs that help you transform the
@@ -89,8 +89,8 @@ away!
   modify live data.
   
 * **Testing saves lives.** Using automated testing helps you to check 
-  that nothing has broken when you before you release code. It also helps 
-  your contributors feel confidant they have not broken code they are
+  that nothing has broken before you release code. It also helps 
+  your contributors feel confident they have not broken code they are
   less familiar with.
 
 ## Practices for releasing open source sofware
