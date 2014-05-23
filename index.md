@@ -69,44 +69,16 @@ away!
   well-contained with a special tag or label. If someone offers to
   contribute, you can point them at these **low-hanging fruit**.
   
-* **Supply testing data and database migrations.** To get people started
-  with your application, it's very useful to provide some realisitc test
-  data, perhaps even a part of the data used in the live service.
-  
-  Database migrations are small programs that help you transform the
-  structure the application's data model changes over time. This makes
-  it easy for other users to follow along when you make these types of
-  changes.
-  
 * **Mailing lists.** Set up a mailing list for developers, and invite 
   anyone who is contributing code to subscribe to that list and join the
   discussion. For larger projects with multiple audiences it may be
   worthwhile to set up a second mailing list for non-technical
   discussions or release announcements.
   
-* **Provide a demo system.** If you're providing a read/write API, it 
-  can be useful for developers to have a testing instance that does not
-  modify live data.
-  
 * **Testing saves lives.** Using automated testing helps you to check 
   that nothing has broken when you before you release code. It also helps 
   your contributors feel confidant they have not broken code they are
   less familiar with.
-
-* **Monitoring and logging.** You shouldn't rely on kind (or angry) 
-  strangers to notify you when your app is down. Basic uptime monitoring
-  can be done using tools like [Nagios](http://www.nagios.org/) or hosted
-  services. To collect even more detailed metrics you might 
-  [look into](http://matt.aimonetti.net/posts/2013/06/26/practical-guide-to-graphite-monitoring/) 
-  StatsD and Graphite:
-  - sprinkle [StatsD](https://github.com/etsy/statsd/wiki)) instrumentation 
-    liberally throughout your application (there are loads of clients, 
-    setting them up typically requires almost no configuration, and nothing
-    goes wrong if you're not actually running statsd)
-  - push StatsD metrics into 
-    [Graphite](http://graphite.readthedocs.org/en/latest/overview.html) (and
-    getting up and running with Graphite can be pretty easy, too.
-
 
 
 ## Practices for releasing open source sofware
@@ -139,6 +111,37 @@ away!
 * When people contribute, try to include their changes, even if they're
   not on your roadmap. Take time to review the code, and if it needs
   improvement, guide contributors through making the necessary changes.
+
+
+## Practices for running and deploying civic software applications
+
+* **Provide a demo system.** If you're providing a read/write API, it 
+  can be useful for developers to have a testing instance that does not
+  modify live data.
+
+* **Supply testing data and database migrations.** To get people started
+  with your application, it's very useful to provide some realisitc test
+  data, perhaps even a part of the data used in the live service.
+  
+  Database migrations are small programs that help you transform the
+  structure the application's data model changes over time. This makes
+  it easy for other users to follow along when you make these types of
+  changes.
+
+* **Monitoring and logging.** You shouldn't rely on kind (or angry) 
+  strangers to notify you when your app is down. Basic uptime monitoring
+  can be done using tools like [Nagios](http://www.nagios.org/) or hosted
+  services. To collect even more detailed metrics you might 
+  [look into](http://matt.aimonetti.net/posts/2013/06/26/practical-guide-to-graphite-monitoring/) 
+  StatsD and Graphite:
+  - sprinkle [StatsD](https://github.com/etsy/statsd/wiki)) instrumentation 
+    liberally throughout your application (there are loads of clients, 
+    setting them up typically requires almost no configuration, and nothing
+    goes wrong if you're not actually running statsd)
+  - push StatsD metrics into 
+    [Graphite](http://graphite.readthedocs.org/en/latest/overview.html) (and
+    getting up and running with Graphite can be pretty easy, too.
+
 
 ### References
 
