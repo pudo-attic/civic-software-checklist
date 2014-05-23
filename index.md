@@ -93,6 +93,22 @@ away!
   your contributors feel confidant they have not broken code they are
   less familiar with.
 
+* **Monitoring and logging.** You shouldn't rely on kind (or angry) 
+  strangers to notify you when your app is down. Basic uptime monitoring
+  can be done using tools like [Nagios](http://www.nagios.org/) or hosted
+  services. To collect even more detailed metrics you might 
+  [look into](http://matt.aimonetti.net/posts/2013/06/26/practical-guide-to-graphite-monitoring/) 
+  StatsD and Graphite:
+  - sprinkle [StatsD](https://github.com/etsy/statsd/wiki)) instrumentation 
+    liberally throughout your application (there are loads of clients, 
+    setting them up typically requires almost no configuration, and nothing
+    goes wrong if you're not actually running statsd)
+  - push StatsD metrics into 
+    [Graphite](http://graphite.readthedocs.org/en/latest/overview.html) (and
+    getting up and running with Graphite can be pretty easy, too.
+
+
+
 ## Practices for releasing open source sofware
 
 * Avoid **not invented here** syndrome. Another group may have already
