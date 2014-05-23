@@ -93,7 +93,7 @@ away!
   your contributors feel confident they have not broken code they are
   less familiar with.
 
-## Practices for releasing open source sofware
+## Practices for releasing open source software
 
 * Avoid **not invented here** syndrome. Another group may have already
   solved the problem you're dealing with, so spend some time on
