@@ -26,11 +26,44 @@ pull requests to suggest changes. The goal of this document is to be as
 concise and understandable as possible. If you see any fluff, help cut it
 away!
 
-## Checklist for your project
 
-* **An open source license**. Explicitly defining the terms of re-use is the key to
-  opening your software. Never write your own licenses, but instead use
-  either the GPL or an MIT/BSD license ([here's a comparison](http://choosealicense.com)), and place the chosen text in a 
+## Practices for engaging in open source software development
+
+* Avoid **not invented here** syndrome. Another group may have already
+  solved the problem you're dealing with, so spend some time on
+  research. If their solution looks overly complex, think twice: while
+  this may be a sign of bad code, it could also be an indicator that
+  their project is mature and has learned to deal with many different
+  concerns. 
+ 
+* It's usually **cheaper to adapt than to re-build**. Your idea is probably
+  special to you, but experience shows that starting a new project has a 
+  fixed cost that will eat up a significant part of your budget.
+
+* When you release code, think about **separating tools from projects**.
+  For example, in a crowd-sourcing effort, you might want to separate
+  the mechanism you use to collect data (e.g. text messages) from the
+  code that is specific to the topic of your project (e.g. potholes).
+
+* Keep your code up to date. You might want to surprise the world with
+  a big, new feature sometimes, but that should not be a reason to stop
+  sharing your code until that new thing is done. Big, infrequent
+  updates kill collaboration.
+
+* When people announce their intention to contribute to your project,
+  invite them to submit some code as early as possible. Save discussions
+  on product design and general strategy for later.
+
+* When people contribute, try to include their changes, even if they're
+  not on your roadmap. Take time to review the code, and if it needs
+  improvement, guide contributors through making the necessary changes.
+
+
+## Checklist for starting a project
+
+* **An open source license**. Explicitly defining the terms of re-use is
+  the key to opening your software. Never write your own licenses, but
+  instead use either the GPL or an MIT/BSD license ([here's a comparison](http://choosealicense.com)), and place the chosen text in a 
   file called ``LICENSE``.
  
 * **Set up a public code repository**. Code sharing platforms like
@@ -68,61 +101,48 @@ away!
   help potential contributors, mark issues which are easy to tackle and
   well-contained with a special tag or label. If someone offers to
   contribute, you can point them at these **low-hanging fruit**.
-  
-* **Supply testing data and database migrations.** To get people started
-  with your application, it's very useful to provide some realistic test
-  data, perhaps even a part of the data used in the live service.
-  
-  Database migrations are small programs that help you transform the
-  structure the application's data model changes over time. This makes
-  it easy for other users to follow along when you make these types of
-  changes.
-  
+
 * **Mailing lists.** Set up a mailing list for developers, and invite 
   anyone who is contributing code to subscribe to that list and join the
   discussion. For larger projects with multiple audiences it may be
   worthwhile to set up a second mailing list for non-technical
   discussions or release announcements.
   
-* **Provide a demo system.** If you're providing a read/write API, it 
-  can be useful for developers to have a testing instance that does not
-  modify live data.
-  
 * **Testing saves lives.** Using automated testing helps you to check 
   that nothing has broken before you release code. It also helps 
   your contributors feel confident they have not broken code they are
   less familiar with.
 
-## Practices for releasing open source software
 
-* Avoid **not invented here** syndrome. Another group may have already
-  solved the problem you're dealing with, so spend some time on
-  research. If their solution looks overly complex, think twice: while
-  this may be a sign of bad code, it could also be an indicator that
-  their project is mature and has learned to deal with many different
-  concerns. 
- 
-* It's usually **cheaper to adapt than to re-build**. Your idea is probably
-  special to you, but experience shows that starting a new project has a 
-  fixed cost that will eat up a significant part of your budget.
+## Practices for hosting civic software applications
 
-* When you release code, think about **separating tools from projects**.
-  For example, in a crowd-sourcing effort, you might want to separate
-  the mechanism you use to collect data (e.g. text messages) from the
-  code that is specific to the topic of your project (e.g. potholes).
+* **Provide a demo system.** If you're providing a read/write API, it 
+  can be useful for developers to have a testing instance that does not
+  modify live data.
 
-* Keep your code up to date. You might want to surprise the world with
-  a big, new feature sometimes, but that should not be a reason to stop
-  sharing your code until that new thing is done. Big, infrequent
-  updates kill collaboration.
+* **Supply testing data and database migrations.** To get people started
+  with your application, it's very useful to provide some realisitc test
+  data, perhaps even a part of the data used in the live service.
+  
+  Database migrations are small programs that help you transform the
+  structure the application's data model changes over time. This makes
+  it easy for other users to follow along when you make these types of
+  changes.
 
-* When people announce their intention to contribute to your project,
-  invite them to submit some code as early as possible. Save discussions
-  on product design and general strategy for later.
+* **Monitoring and logging.** You shouldn't rely on kind (or angry) 
+  strangers to notify you when your app is down. Basic uptime monitoring
+  can be done using tools like [Nagios](http://www.nagios.org/) or hosted
+  services. To collect even more detailed metrics you might 
+  [look into](http://matt.aimonetti.net/posts/2013/06/26/practical-guide-to-graphite-monitoring/) 
+  StatsD and Graphite:
+  - sprinkle [StatsD](https://github.com/etsy/statsd/wiki)) instrumentation 
+    liberally throughout your application (there are loads of clients, 
+    setting them up typically requires almost no configuration, and nothing
+    goes wrong if you're not actually running statsd)
+  - push StatsD metrics into 
+    [Graphite](http://graphite.readthedocs.org/en/latest/overview.html) (and
+    getting up and running with Graphite can be pretty easy, too.
 
-* When people contribute, try to include their changes, even if they're
-  not on your roadmap. Take time to review the code, and if it needs
-  improvement, guide contributors through making the necessary changes.
 
 ### References
 
