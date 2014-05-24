@@ -10,7 +10,7 @@ produce software. This document collects tips to tackle two common
 challenges they face:
 
 * **Sharing your code** with others in such a way that it actually invites
-  collaboration, rather than just `token` open source code.
+  collaboration, rather than just 'token' open source code.
 
 * Reducing the **risk from contractors** that work on a project for some
   time and then move on to other clients. It's important that the code
@@ -141,4 +141,4 @@ away!
 
 ### Credits
 
-This document contains contributions from Friedrich Lindenberg, Robert Gieseke, David Lemayian, Nick Stenning.
+This document contains contributions from [Friedrich Lindenberg](http://pudo.org), [Robert Gieseke](https://github.com/rgieseke), [David Lemayian](http://www.davidlemayian.com/), [Nick Stenning](https://whiteink.com/).
