@@ -19,15 +19,13 @@ challenges they face:
 Both issues can be addressed by following the (mostly non-technical)
 strategies laid out here.
 
-***
-
 **Note:** This is a collaborative document. Please feel free to submit
 pull requests to suggest changes. The goal of this document is to be as
 concise and understandable as possible. If you see any fluff, help cut it
 away!
 
 
-## Practices for engaging in open source software development
+## Engaging in open source development
 
 * Avoid **not invented here** syndrome. Another group may have already
   solved the problem you're dealing with, so spend some time on
@@ -114,7 +112,7 @@ away!
   less familiar with.
 
 
-## Practices for hosting civic software applications
+## Hosting civic applications
 
 * **Provide a demo system.** If you're providing a read/write API, it 
   can be useful for developers to have a testing instance that does not
@@ -129,23 +127,18 @@ away!
   it easy for other users to follow along when you make these types of
   changes.
 
-* **Monitoring and logging.** You shouldn't rely on kind (or angry) 
-  strangers to notify you when your app is down. Basic uptime monitoring
-  can be done using tools like [Nagios](http://www.nagios.org/) or hosted
-  services. To collect even more detailed metrics you might 
-  [look into](http://matt.aimonetti.net/posts/2013/06/26/practical-guide-to-graphite-monitoring/) 
-  StatsD and Graphite:
-  - sprinkle [StatsD](https://github.com/etsy/statsd/wiki)) instrumentation 
-    liberally throughout your application (there are loads of clients, 
-    setting them up typically requires almost no configuration, and nothing
-    goes wrong if you're not actually running statsd)
-  - push StatsD metrics into 
-    [Graphite](http://graphite.readthedocs.org/en/latest/overview.html) (and
-    getting up and running with Graphite can be pretty easy, too.
+* **Monitoring and logging.** You shouldn't rely on kind strangers to
+  notify you when your app is down. Monitoring can be done using tools like [Nagios](http://www.nagios.org/). 
 
+* **Learn about 12 Factors.** [The website](http://12factor.net/) lists
+  factors that are significant for those offering web services to the 
+  general public.
 
 ### References
 
 * [Producing Open Source Software](http://producingoss.com/en/index.html)
 * Noah Veltman's [principles on design](https://github.com/veltman/principles)
 
+### Credits
+
+This document contains contributions from Friedrich Lindenberg, Robert Gieseke, David Lemayian, Nick Stenning.
